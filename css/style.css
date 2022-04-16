@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Poppins-Black";
+  src: url(../fonts/Poppins-Black.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+:root {
+  --verde-claro: #628e75;
+  --verde-escuro: #1a4855;
+  --branco-letra: #f9f9f9;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--verde-claro),
+    var(--verde-escuro)
+  );
+  background-attachment: fixed;
+  font-family: "Poppins-Regular";
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.conteudo-geral {
+  width: 80%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-cabecalho {
+  display: grid;
+  grid-template-columns: auto 200px;
+  grid-column: 1 / -1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .icones-social-media {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-items: center;
+}
+
+nav .icones-social-media img {
+  cursor: pointer;
+}
+
+.section-lado-esquerdo {
+  color: var(--branco-letra);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 520px;
+}
+
+.section-lado-esquerdo h3 {
+  font-family: "Poppins-Bold";
+  font-size: 20px;
+  line-height: 30px;
+  margin: 8px 0;
+}
+
+.section-lado-esquerdo h1 {
+  font-family: "Poppins-Black";
+  font-size: 68px;
+  margin: 18px 0;
+}
+
+.section-lado-esquerdo p {
+  font-family: "Poppins-Regular";
+  font-size: 16px;
+  line-height: 28px;
+  margin: 20px 0;
+}
+
+.container-buttons {
+  margin: 10px 0px;
+  padding: 10px 0;
+}
+
+.btn {
+  width: 225px;
+  height: 45px;
+  padding: 8px 35px;
+  margin: 0px 10px;
+  color: var(--branco-letra);
+  transform: skew(-15deg, 0deg);
+  font-weight: 700;
+  font-family: "Poppins-SemiBold";
+}
+
+.assistir-agora {
+  background-color: var(--verde-claro);
+  border: none;
+  cursor: pointer;
+}
+
+.assistir-agora img {
+  width: 12px;
+  margin-right: 10px;
+}
+
+.assistir-trailer {
+  border: 2px solid var(--verde-claro);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.section-lado-direito {
+  display: flex;
+  justify-content: center;
+}
+
+.section-lado-direito img {
+  max-width: 100%;
+  width: 500px;
+  margin-top: 50px;
+}
